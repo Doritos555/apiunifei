@@ -2,9 +2,9 @@ const dotenv = require('dotenv');
 dotenv.config();
 const {
     PORT,
-    DATABASE_URL // <-- Mude para DATABASE_URL para corresponder ao .env
+    DATABASE_URL // Mude de 'pgConnection' para 'DATABASE_URL'
 } = process.env;
 module.exports = {
     port: PORT,
-    urlConnection: DATABASE_URL // <-- Mude aqui também
+    urlConnection: DATABASE_URL // Mude de 'pgConnection' para 'DATABASE_URL'
 }
