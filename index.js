@@ -14,8 +14,12 @@ app.use(bodyparser.json());
 // dotenv.config();
 
 //definicao da conexao
-const connectionString = config.DATABASE_URL
+// ...
+//definicao da conexao
+// Mude de config.DATABASE_URL para config.urlConnection
+const connectionString = config.urlConnection 
 const client = new Client(connectionString);
+// ...
 //primeira conexao (teste)
 client.connect((err) => {
   if (err) {
